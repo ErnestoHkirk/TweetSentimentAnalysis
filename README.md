@@ -1,5 +1,5 @@
 # Twitter Sentiment Analysis Tool
-![chrome_2019-10-29_14-38-21](https://user-images.githubusercontent.com/37064367/67812180-b9f01e00-fa5b-11e9-8f29-384f86b991dd.png)
+![chrome_2019-10-29_14-55-13](https://user-images.githubusercontent.com/37064367/67812331-2d922b00-fa5c-11e9-8eb4-60b50e9d79d2.png)
 Python program that analyzes the sentiment of a tweet seperating them into three categories; positive, negative, or neutral.
 
 # How does it work?
