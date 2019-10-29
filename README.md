@@ -1,4 +1,4 @@
-# Twitter Sentiment Anaylsis Tool
+# Twitter Sentiment Analysis Tool
 ![chrome_2019-10-29_14-38-21](https://user-images.githubusercontent.com/37064367/67812180-b9f01e00-fa5b-11e9-8f29-384f86b991dd.png)
 Python program that analyzes the sentiment of a tweet, either positive, negative, or neutral. 
 
