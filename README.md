@@ -14,6 +14,7 @@ https://developer.twitter.com/en/apply-for-access.html
 * TWITTER_CONSUMER_SECRET
 * TWITTER_ACCESS_TOKEN_KEY 
 * TWITTER_ACCESS_TOKEN_SECRET
-3. 
+3. You will need to create an AWS account to access the [Amazon Comprehend]https://docs.aws.amazon.com/comprehend/latest/dg/how-sentiment.html api. 
+https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html
 * AWS_ACCESS_KEY
 * AWS_SECRET_KEY
