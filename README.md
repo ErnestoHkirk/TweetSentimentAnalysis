@@ -7,9 +7,9 @@ Python program that analyzes the sentiment of a tweet seperating them into three
 
 # Set-Up Requirements 
 
-•This program requires you to create a twitter development account in order to access their api and collect the tweets. 
+1. This program requires you to create a twitter development account in order to access their api and collect the tweets. 
 https://developer.twitter.com/en/apply-for-access.html
-• Once your account has been approved, you will be able to access the keys required to run this program.
+2.  Once your account has been approved, you will be able to access the keys required to run this program.
 * AWS_ACCESS_KEY
 * AWS_SECRET_KEY
 * TWITTER_CONSUMER_KEY
