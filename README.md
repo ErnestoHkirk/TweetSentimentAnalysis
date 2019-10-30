@@ -20,3 +20,5 @@ Python program that analyzes the sentiment of a tweet placing it into one of thr
 * PLOTLY
 * BOTO3
 * PYTHON-TWITTER
+5. Enter the required keys you gathered from the steps above. 
+6. Enter the twitter username of the account's tweets you wish to analyze, and change the number of recent tweets you wish to analyze. The default is fifty, but you can analyze up to two hundred tweets every call.  
