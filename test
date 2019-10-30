@@ -1,20 +1,21 @@
+
 import twitter
 import boto3
 
-AWS_ACCESS_KEY = 'X'
-AWS_SECRET_KEY = 'X'
-TWITTER_CONSUMER_KEY = 'X'
-TWITTER_CONSUMER_SECRET = 'X'
-TWITTER_ACCESS_TOKEN_KEY = 'X'
-TWITTER_ACCESS_TOKEN_SECRET = 'X'
+AWS_ACCESS_KEY = 'x'
+AWS_SECRET_KEY = 'x'
+TWITTER_CONSUMER_KEY = 'x'
+TWITTER_CONSUMER_SECRET = 'x'
+TWITTER_ACCESS_TOKEN_KEY = 'x'
+TWITTER_ACCESS_TOKEN_SECRET = 'x'
 
-# twitter authentification
+# twitter authentication
 TWITTER_CLIENT = twitter.Api(consumer_key=TWITTER_CONSUMER_KEY,
                              consumer_secret=TWITTER_CONSUMER_SECRET,
                              access_token_key=TWITTER_ACCESS_TOKEN_KEY,
                              access_token_secret=TWITTER_ACCESS_TOKEN_SECRET)
 
-# boto3 authentification
+# boto3 authentication
 SESSION = boto3.Session(
     aws_access_key_id=AWS_ACCESS_KEY,
     aws_secret_access_key=AWS_SECRET_KEY)
@@ -27,7 +28,9 @@ def get_sentiment(text):
     return sentiment_response["Sentiment"]
 
 
-statuses = TWITTER_CLIENT.GetUserTimeline(screen_name="realDonaldTrump", count=5)
+user = "MotivatinQuotes"
+
+statuses = TWITTER_CLIENT.GetUserTimeline(screen_name=user, count=50)
 tweets = [s.text for s in statuses]
 
 positive = 0
@@ -51,12 +54,13 @@ for index, tweet in enumerate(tweets):
     if sentiment == "NEGATIVE":
         negative += 1
 
-# redundant, may require in future
+# currently redundant, may need in future
 # print("Positive Tweets = ", positive)
 # print("Neutral Tweets = ", neutral)
 # print("Negative Tweets = ", negative)
 
-# at end of function call, call plotly graph
+# api key - plotly
+# 'x' also not necessary for functionality on local host
 
 import plotly.graph_objects as go
 colors = ['green', 'yellow', 'red']
@@ -71,7 +75,9 @@ fig.update(layout_title_text='Tweet Sentiment Analytics, User: @' + user,
 
 fig.show()
 
-# plotly test run
+
+
+# plotly test code
 # import plotly
 #
 # import chart_studio.plotly as py
