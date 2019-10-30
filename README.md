@@ -7,8 +7,8 @@ Python program that analyzes the sentiment of a tweet placing it into one of thr
 
 ## Set-Up Requirements 
 
-1. This program requires you to create a [twitter development](https://developer.twitter.com/en/apply-for-access.html) account in order to access their api which will allow you to fetch the tweets from the user you are analyzing. 
-2.  Once your account has been approved, you will be able to access the keys required to access twitters api.
+1. This program requires you to use a [twitter development account](https://developer.twitter.com/en/apply-for-access.html) in order to access their api which will allow you to fetch the tweets from the user you are analyzing. 
+2.  After your account has been created and approved, you will be able to use the keys provided for you in order to access twitters api.
 * TWITTER_CONSUMER_KEY
 * TWITTER_CONSUMER_SECRET
 * TWITTER_ACCESS_TOKEN_KEY 
@@ -16,3 +16,7 @@ Python program that analyzes the sentiment of a tweet placing it into one of thr
 3. You will need to [create an AWS account](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html) to use the [Amazon Comprehend](https://docs.aws.amazon.com/comprehend/latest/dg/how-sentiment.html) api.
 * AWS_ACCESS_KEY
 * AWS_SECRET_KEY
+4. Import the following libraries into your project's interpreter
+* PLOTLY
+* BOTO3
+* PYTHON-TWITTER
