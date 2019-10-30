@@ -2,10 +2,10 @@
 ![chrome_2019-10-29_14-55-13](https://user-images.githubusercontent.com/37064367/67812331-2d922b00-fa5c-11e9-8eb4-60b50e9d79d2.png)
 Python program that analyzes the sentiment of a tweet seperating them into three categories; positive, negative, or neutral.
 
-# How does it work?
+## How does it work?
 
 
-# Set-Up Requirements 
+## Set-Up Requirements 
 
 1. This program requires you to create a [twitter development](https://developer.twitter.com/en/apply-for-access.html) account in order to access their api which will allow you to fetch the tweets from the user you are analyzing. 
 2.  Once your account has been approved, you will be able to access the keys required to access twitters api.
