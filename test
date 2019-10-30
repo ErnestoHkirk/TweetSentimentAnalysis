@@ -37,8 +37,8 @@ str1 = ""
 
 for index, tweet in enumerate(tweets):
     print(index + 1)
-    print(tweet)
-    print(get_sentiment(tweet), "\n")
+    # print(tweet)
+    # print(get_sentiment(tweet), "\n")
     sentiment = get_sentiment(tweet)
     index += 1
 
@@ -51,8 +51,45 @@ for index, tweet in enumerate(tweets):
     if sentiment == "NEGATIVE":
         negative += 1
 
-print("Positive Tweets = ", positive)
-print("Neutral Tweets = ", neutral)
-print("Negative Tweets = ", negative)
+# redundant, may require in future
+# print("Positive Tweets = ", positive)
+# print("Neutral Tweets = ", neutral)
+# print("Negative Tweets = ", negative)
 
 # at end of function call, call plotly graph
+
+import plotly.graph_objects as go
+colors = ['green', 'yellow', 'red']
+
+fig = go.Figure(data=[go.Pie(labels=['Positive', 'Neutral', 'Negative'],
+                             values=[positive, neutral, negative])])
+fig.update_traces(hoverinfo='label+percent', textinfo='value', textfont_size=20,
+                  marker=dict(colors=colors, line=dict(color='#000000', width=2)))
+
+fig.update(layout_title_text='Tweet Sentiment Analytics, User: @' + user,
+           layout_showlegend=True)
+
+fig.show()
+
+# plotly test run
+# import plotly
+#
+# import chart_studio.plotly as py
+# import plotly.graph_objs as go
+#
+# tls.set_credentials_file(“myusername”, “my_API_Key”)
+#
+# py.sign_in(“myusername”, “my_API_Key”)
+#
+# trace0 = go.Scatter(
+#     x=[1, 2, 3, 4],
+#     y=[10, 15, 13, 17]
+# )
+# trace1 = go.Scatter(
+#     x=[1, 2, 3, 4],
+#     y=[16, 5, 11, 9]
+# )
+# data = [trace0, trace1]
+#
+# first_plot_url = py.plot(data, filename='apple stock moving average', auto_open=True,)
+# print(first_plot_url)
